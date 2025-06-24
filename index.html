@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankieta ORW Fala</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; background: #f9f9f9; }
+    h1 { color: #0066cc; }
+    form { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+    button { margin-top: 20px; background: #0066cc; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #0055a5; }
+  </style>
+</head>
+<body>
+  <h1>Ankieta Ewaluacyjna Szkolenia – ORW Fala</h1>
+  <p>Prosimy o wypełnienie poniższego formularza. Twoje odpowiedzi pomogą nam dostosować program szkoleniowy.</p>
+
+  <form action="https://formspree.io/f/xeqyzdog" method="POST">
+    <label>Nazwa szkoły:</label>
+    <input type="text" name="Nazwa szkoły" required>
+
+    <label>Imię i nazwisko nauczyciela/wychowawcy:</label>
+    <input type="text" name="Imię i nazwisko" required>
+
+    <label>Stanowisko:</label>
+    <select name="Stanowisko">
+      <option value="Nauczyciel">Nauczyciel</option>
+      <option value="Wychowawca">Wychowawca</option>
+      <option value="Inny">Inny</option>
+    </select>
+
+    <label>Czy szkolenie było potrzebne dla klas 4–5?</label>
+    <select name="Potrzeba szkolenia">
+      <option>Zdecydowanie tak</option>
+      <option>Raczej tak</option>
+      <option>Raczej nie</option>
+      <option>Zdecydowanie nie</option>
+    </select>
+
+    <label>Uzasadnienie:</label>
+    <textarea name="Uzasadnienie"></textarea>
+
+    <label>Zadowolenie dzieci:</label>
+    <select name="Zadowolenie dzieci">
+      <option>Bardzo wysokie</option>
+      <option>Wysokie</option>
+      <option>Średnie</option>
+      <option>Niskie</option>
+      <option>Trudno powiedzieć</option>
+    </select>
+
+    <label>Zaangażowanie dzieci:</label>
+    <select name="Zaangażowanie dzieci">
+      <option>Bardzo duże</option>
+      <option>Duże</option>
+      <option>Umiarkowane</option>
+      <option>Małe</option>
+      <option>Brak</option>
+    </select>
+
+    <label>Reakcje dzieci (komentarze, cytaty):</label>
+    <textarea name="Komentarze dzieci"></textarea>
+
+    <label>Uwagi/sugestie/pomysły:</label>
+    <textarea name="Uwagi"></textarea>
+
+    <button type="submit">Wyślij odpowiedzi</button>
+  </form>
+</body>
+</html>
